@@ -1,7 +1,9 @@
-<div *ngFor="let t of dataRSS">
-<div [innerHTML]="t.description"></div>
-<p>{{t.pubDate}}</p>
-<a [routerLink]="['/content',t.id]" style="color:#f01">{{t.title}}</a>
-<p>{{t.guid}}</p>
-<p>{{t.id}}</p>
+<div *ngFor="let item of dataRSS">
+  <a [routerLink]="['/content',item.id]">
+    {{item.title}}
+  </a>
+  <div [innerHTML]="item.description.replace(item.link,'/content/'+item.id)"></div>
+  <div>
+    {{item.pubDate}}
+  </div>
 </div>
