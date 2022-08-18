@@ -1,0 +1,7 @@
+<div *ngFor="let t of dataRSS">
+<div [innerHTML]="t.description"></div>
+<p>{{t.pubDate}}</p>
+<a [routerLink]="['/content',t.id]" style="color:#f01">{{t.title}}</a>
+<p>{{t.guid}}</p>
+<p>{{t.id}}</p>
+</div>
