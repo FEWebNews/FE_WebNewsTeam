@@ -18,17 +18,22 @@ export class ContentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.rss.getItem().subscribe(res => {
+    const guid = this.router.snapshot.params['guid'];
+    const component = this.router.snapshot.params['component'];
+    this.rss.getItem(component).subscribe(res => {
       this.contentList = res;
-      const id = parseInt(this.router.snapshot.params['id']);
-      this.content = this.getContentItem(id);
+      this.content = this.getContentItem(guid);
       this.load(this.content?.link);
       window.scrollTo(0, 0);
     })
   }
 
-  getContentItem(id: number) {
-    return this.contentList.find((n: News) => n.id === id)
+  getContentItem(guid: string) {
+    return this.contentList.find((n: News) => n.guid.replace('https://vnexpress.net/', '')
+      .replace('https://video.vnexpress.net/', '')
+      .replace('/', '-')
+      .replace('/', '-')
+      .replace('/', '-') === guid)
   }
 
   async load(url: any) {

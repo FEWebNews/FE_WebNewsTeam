@@ -1,441 +1,126 @@
-
 <header class="header-main">
-    <div class="header">
-        <div class="container">
-         <div class="header-content">
-             <div class="header-left">
-              <div class="header-logo">
+  <div class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="header-logo">
 
-                  <div class="header-category">
-                      <i class="fa-solid fa-bars"></i>
-                  </div>
-                  <a [routerLink]="['']">
-                      <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v631/v2_2019/pc/graphics/logo.svg" alt="">
-                  </a>
-              </div>
-              <div class="header-time">
+            <div class="header-category">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <a [routerLink]="['']">
+              <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v631/v2_2019/pc/graphics/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="header-time">
                   <span>
                       Thứ hai, 8/8/2022
                   </span>
-              </div>
-             </div>
-              <div class="header-right">
-                  <div class="header-search">
-                      <input type="text" placeholder="Search...">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-
-                  </div>
-                  <div class="header-auth">
-                      <i class="fa-solid fa-user"></i>
-                      <a href="#">Đăng Nhập</a>
-                  </div>
-              </div>
           </div>
         </div>
-     </div>
+        <div class="header-right">
+          <div class="header-search">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
 
-     <section class="section-category">
-         <ul class="section-category-list">
-             <li class="section-category-item">
-                 <a [routerLink]="['']"  class="section-category-item__home">
-                     <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="header-auth">
+            <i class="fa-solid fa-user"></i>
+            <a href="#">Đăng Nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                 </a>
-                 <a href="#"class="section-category-item__ehome">
-                    <i class="fa-solid fa-e"></i>
-                 </a>
-             </li>
-             <li  class="section-category-item item-first">
-                <a href="#">
-                    Mới nhất
-                </a>
+  <section class="section-category">
+    <ul class="section-category-list">
+      <li class="section-category-item">
+        <a [routerLink]="['']" class="section-category-item__home">
+          <i class="fa-solid fa-house"></i>
 
-            </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Thời sự
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Chính trị</a>
-                     </li>
-                     <li>
-                         <a href="#">Dân sinh</a>
-                     </li>
-                     <li>
-                         <a href="#">Lao động - Việc làm</a>
-                     </li>
-                     <li>
-                         <a href="#">Giao thông</a>
-                     </li>
-                     <li>
-                         <a href="#">Quỹ hy vọng</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Góc nhìn
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Bình luận nhiều</a>
-                     </li>
-                     <li>
-                         <a href="#">Chính trị & chính sách</a>
-                     </li>
-                     <li>
-                         <a href="#">Y tế & sức khỏe</a>
-                     </li>
-                     <li>
-                         <a href="#">Kinh doan & quản trị</a>
-                     </li>
-                     <li>
-                         <a href="#">Giáo dục & tri thức</a>
-                     </li>
-                     <li>
-                         <a href="#">Môi trường</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Thế giới
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Tư liệu</a>
-                     </li>
-                     <li>
-                         <a href="#">Phân tích</a>
-                     </li>
-                     <li>
-                         <a href="#">Người Việt 5 châu</a>
-                     </li>
-                     <li>
-                         <a href="#">Cuộc sống đó đây</a>
-                     </li>
-                     <li>
-                         <a href="#">Quân sự</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Video
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Thời sự</a>
-                     </li>
-                     <li>
-                         <a href="#">Nhịp sống</a>
-                     </li>
-                     <li>
-                         <a href="#">Food</a>
-                     </li>
-                     <li>
-                         <a href="#">Pháp luật</a>
-                     </li>
-                     <li>
-                         <a href="#">Giải trí</a>
-                     </li>
-                     <li>
-                         <a href="#">Thể thao</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Poscasts
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">VnExpress hôm nay</a>
-                     </li>
-                     <li>
-                         <a href="#">Họ nói gì ?</a>
-                     </li>
-                     <li>
-                         <a href="#">Hộp đen</a>
-                     </li>
-                     <li>
-                         <a href="#">Ly hôn</a>
-                     </li>
-                     <li>
-                         <a href="#">Thầm thì</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Kinh doanh
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Quốc tế</a>
-                     </li>
-                     <li>
-                         <a href="#">Doanh nghiệp</a>
-                     </li>
-                     <li>
-                         <a href="#">Chứng khoán</a>
-                     </li>
-                     <li>
-                         <a href="#">Bất động sản</a>
-                     </li>
-                     <li>
-                         <a href="#">Ebank</a>
-                     </li>
-                     <li>
-                         <a href="#">Vĩ mô</a>
-                     </li>
-                 </ul>
-             </li>
+        </a>
+        <a href="#" class="section-category-item__ehome">
+          <i class="fa-solid fa-e"></i>
+        </a>
+      </li>
+      <li class="section-category-item item-first">
+        <a [routerLink]="['']">
+          Mới nhất
+        </a>
 
-             <li  class="section-category-item">
-                 <a href="#">
-                     Khoa học
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Khoa học trong nước</a>
-                     </li>
-                     <li>
-                         <a href="#">Tin tức</a>
-                     </li>
-                     <li>
-                         <a href="#">Phát minh</a>
-                     </li>
-                     <li>
-                         <a href="#">Ứng dụng</a>
-                     </li>
-                     <li>
-                         <a href="#">Thế giới tự nhiên</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Giải trí
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Giới sao</a>
-                     </li>
-                     <li>
-                         <a href="#">Video</a>
-                     </li>
-                     <li>
-                         <a href="#">Phim</a>
-                     </li>
-                     <li>
-                         <a href="#">Nhạc</a>
-                     </li>
-                     <li>
-                         <a href="#">Thời trang</a>
-                     </li>
-                     <li>
-                         <a href="#">Làm đẹp</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Thể thao
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Đá bóng</a>
-                     </li>
-                     <li>
-                         <a href="#">Marathon</a>
-                     </li>
-                     <li>
-                         <a href="#">Lịch thi đấu</a>
-                     </li>
-                     <li>
-                         <a href="#">Tennis</a>
-                     </li>
-                     <li>
-                         <a href="#">Bundesliga</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Pháp luật
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Hồ sơ phá án</a>
-                     </li>
-                     <li>
-                         <a href="#">Tư vấn</a>
-                     </li>
-                     <li>
-                         <a href="#">Video</a>
-                     </li>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['thoisu']">
+          Thời sự
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['thegioi']">
+          Thế giới
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['kinhdoanh']">
+          Kinh doanh
+        </a>
+      </li>
 
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Giáo dục
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Tin tức</a>
-                     </li>
-                     <li>
-                         <a href="#">Tuyển sinh</a>
-                     </li>
-                     <li>
-                         <a href="#">Chân dung</a>
-                     </li>
-                     <li>
-                         <a href="#">Du học</a>
-                     </li>
-                     <li>
-                         <a href="#">Học tiếng anh</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Sức khỏe
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Tin tức</a>
-                     </li>
-                     <li>
-                         <a href="#">Tư vấn</a>
-                     </li>
-                     <li>
-                         <a href="#">Dinh dưỡng</a>
-                     </li>
-                     <li>
-                         <a href="#">Sức khỏe</a>
-                     </li>
-                     <li>
-                         <a href="#">Đàn ông</a>
-                     </li>
-                     <li>
-                         <a href="#">Các bệnh</a>
-                     </li>
-                 </ul>
-             </li>
-
-             <li  class="section-category-item">
-                 <a href="#">
-                     Đời sống
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Tổ ấm</a>
-                     </li>
-                     <li>
-                         <a href="#">Bài học sống</a>
-                     </li>
-                     <li>
-                         <a href="#">Nhà</a>
-                     </li>
-                     <li>
-                         <a href="#">Tiêu dùng</a>
-                     </li>
-                     <li>
-                         <a href="#">Cooking</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Du lịch
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Điểm đến</a>
-                     </li>
-                     <li>
-                         <a href="#">Ẩm thực</a>
-                     </li>
-                     <li>
-                         <a href="#">Dấu chân</a>
-                     </li>
-                     <li>
-                         <a href="#">Tư vấn</a>
-                     </li>
-                     <li>
-                         <a href="#">Cẩm nang</a>
-                     </li>
-                     <li>
-                         <a href="#">Ảnh</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Số hóa
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Công nghệ</a>
-                     </li>
-                     <li>
-                         <a href="#">Sản phẩm</a>
-                     </li>
-                     <li>
-                         <a href="#">Blockchain</a>
-                     </li>
-                     <li>
-                         <a href="#">Tech Award 2022</a>
-                     </li>
-                     <li>
-                         <a href="#">Start up</a>
-                     </li>
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Xe
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Thị trường</a>
-                     </li>
-                     <li>
-                         <a href="#">Cầm lái</a>
-                     </li>
-                     <li>
-                         <a href="#">Diễn đàn</a>
-                     </li>
-
-                 </ul>
-             </li>
-             <li  class="section-category-item">
-                 <a href="#">
-                     Ý kiến
-                 </a>
-                 <ul class="section-category-item__desc">
-                     <li>
-                         <a href="#">Thời sự</a>
-                     </li>
-                     <li>
-                         <a href="#">Đời sống</a>
-                     </li>
-
-                 </ul>
-             </li>
-
-             <li  class="section-category-item item-last">
-                 <a href="#">
-                     Tất cả
-                     <i class="fa-solid fa-bars"></i>
-                 </a>
-
-
-             </li>
-         </ul>
-     </section>
+      <li class="section-category-item">
+        <a [routerLink]="['khoahoc']">
+          Khoa học
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['giaitri']">
+          Giải trí
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['thethao']">
+          Thể thao
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['phapluat']">
+          Pháp luật
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['giaoduc']">
+          Giáo dục
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['suckhoe']">
+          Sức khỏe
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['doisong']">
+          Đời sống
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['dulich']">
+          Du lịch
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['sohoa']">
+          Số hóa
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['xe']">
+          Xe
+        </a>
+      </li>
+      <li class="section-category-item">
+        <a [routerLink]="['ykien']">
+          Ý kiến
+        </a>
+      </li>
+    </ul>
+  </section>
 </header>

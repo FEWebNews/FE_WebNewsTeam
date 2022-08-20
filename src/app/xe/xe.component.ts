@@ -1,20 +1,20 @@
 import {Component, OnInit} from '@angular/core';
-import {News} from '../model/news.model';
-import {RssService} from '../services/rss.service';
+import {RssService} from "../services/rss.service";
+import {News} from "../model/news.model";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-xe',
+  templateUrl: './xe.component.html',
+  styleUrls: ['./xe.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class XeComponent implements OnInit {
   dataRSS: News [] = [];
 
   constructor(private rss: RssService) {
   }
 
   ngOnInit(): void {
-    this.getItem("home");
+    this.getItem("xe");
   }
 
   getItem(name: string) {

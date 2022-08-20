@@ -1,6 +1,6 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import {map} from 'rxjs';
+import {concat, map, Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +11,21 @@ export class RssService {
   constructor(private http: HttpClient) {
   }
 
-  getItem() {
-    return this.http.get<any>(this.url + "home").pipe(map((res: any) => {
+  getInfo(data: any, i: number): any {
+    return data.rss.channel.item[i];
+  }
+
+  getItem(name: string) {
+    return this.http.get<any>(this.url + name).pipe(map((res: any) => {
       return res
     }))
+  }
+
+  createData(data: any, name: string): Observable<any> {
+    return this.http.post<any>(this.url + name, data)
+  }
+
+  deleteData(id: number, name: string): Observable<any> {
+    return concat(this.http.delete<any>(this.url + name + "/" + id));
   }
 }

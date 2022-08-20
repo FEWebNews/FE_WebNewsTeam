@@ -1,0 +1,143 @@
+<div style="margin-top: 150px">
+  <div>
+    Note: Cần xóa dữ liệu cữ trước khi tải dữ liệu mới!!!
+  </div>
+  <div *ngIf="status!=null">
+    Status: {{status}}
+  </div>
+  <div>
+    <span>Quản lý trang chủ</span>
+    <span>
+        <button [disabled]="done[1]"
+                (click)="createData('https://vnexpress.net/rss/tin-moi-nhat.rss','home',1,2)">Download</button>
+        <button [disabled]="done[2]"
+                (click)="deleteData('home',1,2)">Delete</button>
+      </span>
+  </div>
+  <div>
+    <span>Quản lý thời sự</span>
+    <span>
+          <button [disabled]="done[3]"
+                  (click)="createData('https://vnexpress.net/rss/thoi-su.rss','thoisu',3,4)">Download</button>
+          <button [disabled]="done[4]"
+                  (click)="deleteData('thoisu',3,4)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý thế giới</span>
+    <span>
+          <button [disabled]="done[5]"
+                  (click)="createData('https://vnexpress.net/rss/the-gioi.rss','thegioi',5,6)">Download</button>
+          <button [disabled]="done[6]"
+                  (click)="deleteData('thegioi',5,6)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý kinh doanh</span>
+    <span>
+          <button [disabled]="done[7]"
+                  (click)="createData('https://vnexpress.net/rss/kinh-doanh.rss','kinhdoanh',7,8)">Download</button>
+          <button [disabled]="done[8]"
+                  (click)="deleteData('kinhdoanh',7,8)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý khoa học</span>
+    <span>
+          <button [disabled]="done[9]"
+                  (click)="createData('https://vnexpress.net/rss/khoa-hoc.rss','khoahoc',9,10)">Download</button>
+          <button [disabled]="done[10]"
+                  (click)="deleteData('khoahoc',9,10)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý giải trí</span>
+    <span>
+          <button [disabled]="done[11]"
+                  (click)="createData('https://vnexpress.net/rss/giai-tri.rss','giaitri',11,12)">Download</button>
+          <button [disabled]="done[12]"
+                  (click)="deleteData('giaitri',11,12)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý thế thao</span>
+    <span>
+          <button [disabled]="done[13]"
+                  (click)="createData('https://vnexpress.net/rss/the-thao.rss','thethao',13,14)">Download</button>
+          <button [disabled]="done[14]"
+                  (click)="deleteData('thethao',13,14)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý pháp luật</span>
+    <span>
+          <button [disabled]="done[15]"
+                  (click)="createData('https://vnexpress.net/rss/phap-luat.rss','phapluat',15,16)">Download</button>
+          <button [disabled]="done[16]"
+                  (click)="deleteData('phapluat',15,16)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý giáo dục</span>
+    <span>
+          <button [disabled]="done[17]"
+                  (click)="createData('https://vnexpress.net/rss/giao-duc.rss','giaoduc',17,18)">Download</button>
+          <button [disabled]="done[18]"
+                  (click)="deleteData('giaoduc',17,18)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý sức khỏe</span>
+    <span>
+          <button [disabled]="done[19]"
+                  (click)="createData('https://vnexpress.net/rss/suc-khoe.rss','suckhoe',19,20)">Download</button>
+          <button [disabled]="done[20]"
+                  (click)="deleteData('suckhoe',19,20)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý đời sống</span>
+    <span>
+          <button [disabled]="done[21]"
+                  (click)="createData('https://vnexpress.net/rss/gia-dinh.rss','doisong',21,22)">Download</button>
+          <button [disabled]="done[22]"
+                  (click)="deleteData('doisong',21,22)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý du lịch</span>
+    <span>
+          <button [disabled]="done[23]"
+                  (click)="createData('https://vnexpress.net/rss/du-lich.rss','dulich',23,24)">Download</button>
+          <button [disabled]="done[24]"
+                  (click)="deleteData('dulich',23,24)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý số hóa</span>
+    <span>
+          <button [disabled]="done[25]"
+                  (click)="createData('https://vnexpress.net/rss/so-hoa.rss','sohoa',25,26)">Download</button>
+          <button [disabled]="done[26]"
+                  (click)="deleteData('sohoa',25,26)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý xe</span>
+    <span>
+          <button [disabled]="done[27]"
+                  (click)="createData('https://vnexpress.net/rss/oto-xe-may.rss','xe',27,28)">Download</button>
+          <button [disabled]="done[28]"
+                  (click)="deleteData('xe',27,28)">Delete</button>
+        </span>
+  </div>
+  <div>
+    <span>Quản lý ý kiến</span>
+    <span>
+          <button [disabled]="done[29]"
+                  (click)="createData('https://vnexpress.net/rss/y-kien.rss','ykien',29,30)">Download</button>
+          <button [disabled]="done[30]"
+                  (click)="deleteData('ykien',29,30)">Delete</button>
+        </span>
+  </div>
+</div>
