@@ -1,0 +1,12 @@
+<div *ngFor="let item of dataRSS">
+  <a [routerLink]="['/content','giaitri',item.guid.replace('https://vnexpress.net/','')
+  .replace('/','-')]">
+    {{item.title}}
+  </a>
+  <div
+    [innerHTML]="item.description.replace(item.link,'/content/'+'giaitri/'+item.guid.replace('https://vnexpress.net/','')
+    .replace('/','-').replace('/','-').replace('/','-'))"></div>
+  <div>
+    {{item.pubDate}}
+  </div>
+</div>
