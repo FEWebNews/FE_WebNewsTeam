@@ -1,12 +1,24 @@
-<div *ngFor="let item of dataRSS">
-  <a [routerLink]="['/content','home',item.guid.replace('https://vnexpress.net/','')
-  .replace('/','-')]">
-    {{item.title}}
-  </a>
-  <div
-    [innerHTML]="item.description.replace(item.link,'/content/'+'home/'+item.guid.replace('https://vnexpress.net/','')
-    .replace('/','-').replace('/','-').replace('/','-'))"></div>
-  <div>
-    {{item.pubDate}}
-  </div>
+<div class="container">
+    <div class="rss-list" *ngFor="let item of filterCategory | filter:searchKey:'title'| paginate : { itemsPerPage: 5 , currentPage: p }">
+      <div class="rss-item">
+        <a [routerLink]="['/content','home',item.guid.replace('https://vnexpress.net/','')
+        .replace('/','-')]" 
+        class="rss-title">{{item.title}}</a>
+        <div 
+        [innerHTML]="item.description.replace(item.link,'/content/'+'home/'+item.guid.replace('https://vnexpress.net/','')
+    .replace('/','-').replace('/','-').replace('/','-'))"
+        class="rss-desc" >
+
+         
+        </div>
+       
+      </div>
+
+    </div>
+    <pagination-controls (pageChange)="p=$event" style="max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    padding-left: 0;"></pagination-controls>
 </div>
+

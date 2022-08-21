@@ -1,16 +1,16 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import {concat, map, Observable} from 'rxjs';
+import {BehaviorSubject, concat, map, Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RssService {
   public url: string = "http://localhost:3000/"
-
+  public search = new BehaviorSubject<string>("")
   constructor(private http: HttpClient) {
   }
-
+  
   getInfo(data: any, i: number): any {
     return data.rss.channel.item[i];
   }
