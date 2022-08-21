@@ -1,0 +1,117 @@
+.container{
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 100px auto -200px;
+    position: relative;
+}
+.rss{
+    
+
+    &-list{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: #000;
+    }
+    &-item{
+        // background-color: #f01;
+        margin: 10px 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    &-title{
+        text-decoration: none;
+        color: #000;
+        font-size:25px;
+        padding: 15px 0;
+        font-weight: 600;
+
+        &:hover{
+            color: #9f224e;
+        }
+    }
+    &-desc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        margin-top: 10px;
+        margin-bottom: 10px;
+      
+        font-size: 15px;
+    
+      
+    }
+}
+:host ::ng-deep .rss-desc a img{ 
+    width: 700px;
+    height:420px;
+    border-radius: 5px;
+    background-size: cover;
+    margin-right: 10px;
+    position: relative;
+  
+    overflow: hidden;
+  
+}
+
+:host ::ng-deep .rss-desc a:before{
+    position : absolute;
+   
+    left: 15px;
+    width: 700px;
+    height:420px;
+    border-radius: 5px;
+   font-weight: 500;
+    background-color: #f5f5f5ed;
+    z-index: 100;
+    content:'Xem tin ...';
+    color: #9f224e;
+    font-size: 30px;
+    text-align: center;
+    line-height:420px;
+    display: none;
+    animation: showHide 0.5s linear;
+}
+:host ::ng-deep .rss-desc a:hover::before{
+    display: block;
+
+}
+
+.ngx-pagination{
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    padding-left: 0;
+}
+@keyframes showHide{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    :host ::ng-deep .rss-desc a img{
+        width:700px;
+        height:420px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    :host ::ng-deep .rss-desc a img{
+        width:500px;
+        height:420px;
+    }
+}
+@media screen and (max-width: 600px) {
+    :host ::ng-deep .rss-desc a img{
+        width:300px;
+        height:300px;
+    }
+}

@@ -9,6 +9,14 @@
       "id": 2,
       "username": "trungkien",
       "password": "admin"
+    },
+    {
+      "fullname": "lok huu",
+      "email": "lok@gmail.com",
+      "username": "lok",
+      "password": "123",
+      "confirm": "123",
+      "id": 3
     }
   ],
   "home": [

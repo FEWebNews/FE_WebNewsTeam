@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    max-width: 450px;
+    padding: 0 15px;
+    margin: 150px auto -200px;
+    position: relative;
+    
+}
+.admin{
+    &-item{
+        display:flex;
+        align-items:center;
+        margin: 10px 0;
+    }
+    &-title{
+        width: 40%;
+        font-weight: 500;
+    }
+    &-feature{
+        width: 60%;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+}
+button{
+    outline:none;
+    border:none;
+}
+.admin-feature button:first-child{
+    background-color: #00AAFD;
+    color:#fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.admin-feature button:nth-child(2){
+    color:#fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #F16657;
+}
