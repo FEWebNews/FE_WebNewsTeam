@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 
 
   ngOnInit(): void {
-   
+
   }
   onSignIn(){
     const {email, password} = this.formData.value

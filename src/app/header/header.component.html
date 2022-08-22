@@ -20,30 +20,30 @@
         </div>
         <div class="header-right">
           <div class="header-search">
-            <input  type="search" placeholder="Search..." name="searchTerm"
-            [(ngModel)]="searchTerm" (keyup)="search($event)" [ngModelOptions]="{standalone: true}"
-            
+            <input type="search" placeholder="Search..." name="searchTerm"
+                   [(ngModel)]="searchTerm" (keyup)="search($event)" [ngModelOptions]="{standalone: true}"
+
             >
-           
+
             <i class="fa-solid fa-magnifying-glass"></i>
 
           </div>
-          <div class="header-auth header-login" *ngIf="!user" >
+          <div class="header-auth header-login" *ngIf="!user">
             <i class="fa-solid fa-user"></i>
-            <a routerLink="/login" >Đăng Nhập</a>
-            
+            <a routerLink="/login">Đăng Nhập</a>
+
           </div>
-          <div class="header-auth header-admin" *ngIf="user" >
+          <div class="header-auth header-admin" *ngIf="user">
             <i class="fa-brands fa-adn"></i>
-            <a routerLink="/admin" >Admin :  {{user.email}}</a>
-            
+            <a routerLink="/admin">Admin :  {{user.email}}</a>
+
           </div>
-          <div class="header-auth header-logout" *ngIf="user" >
+          <div class="header-auth header-logout" *ngIf="user">
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <a routerLink="''"(click)="signOut()" >Đăng Xuất</a>
-            
+            <a routerLink="''" (click)="signOut()">Đăng Xuất</a>
+
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -135,31 +135,6 @@
       <li class="section-category-item">
         <a [routerLink]="['ykien']">
           Ý kiến
-        </a>
-      </li>
-      <li class="section-category-item">
-        <a href="#">
-          Hài
-        </a>
-      </li>
-      <li class="section-category-item">
-        <a href="#">
-          Tâm sự
-        </a>
-      </li>
-      <li class="section-category-item">
-        <a href="#">
-          Podcast
-        </a>
-      </li>
-      <li class="section-category-item">
-        <a href="#">
-          Góc nhìn
-        </a>
-      </li>
-      <li class="section-category-item">
-        <a href="#">
-          Video
         </a>
       </li>
     </ul>

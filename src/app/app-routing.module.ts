@@ -17,8 +17,8 @@ import {DulichComponent} from "./dulich/dulich.component";
 import {SohoaComponent} from "./sohoa/sohoa.component";
 import {XeComponent} from "./xe/xe.component";
 import {YkienComponent} from "./ykien/ykien.component";
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import {LoginComponent} from './login/login.component';
+import {RegisterComponent} from './register/register.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -38,9 +38,8 @@ const routes: Routes = [
   {path: 'sohoa', component: SohoaComponent},
   {path: 'xe', component: XeComponent},
   {path: 'ykien', component: YkienComponent},
-
-  {path : 'login',component: LoginComponent},
-  {path : 'register',component: RegisterComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent}
 ];
 
 @NgModule({
