@@ -3,11 +3,11 @@ header{
     top: 0;
     left: 0;
     right: 0;
-  
+
     width: 100%;
     z-index: 1000;
     background-color: #fff;
-    
+
 }
 .container{
     width: 100%;
@@ -16,7 +16,7 @@ header{
     margin: 0 auto;
     position: relative;
     transition: all 2.5s linear;
-   
+
 }
 a{
     color: #4f4f4f;
@@ -24,11 +24,11 @@ a{
 
 }
 .header{
-   
+
     padding: 6px 0;
     border-bottom: 1px solid #e5e5e5;
-   
-   
+
+
     &-content{
         display : flex;
         align-items: center;
@@ -72,7 +72,7 @@ a{
             left:0;
         }
     }
-    
+
     &-search{
         position: relative;
         margin-left:20px;
@@ -82,7 +82,7 @@ a{
             border-radius: 16px;
             border: 1px solid #e5e5e5;
             padding: 0 30px 0 14px;
-           
+
             width: 160px;
         }
         & input:focus{
@@ -96,11 +96,11 @@ a{
             color: #e5e5e5;
             transform: translateY(-50%);
         }
-        
+
     }
     &-auth{
         margin-left: 15px;
-        
+
         & i{
             font-size: 16px;
             color: #BDBDBD;
@@ -110,7 +110,7 @@ a{
             margin-left:10px;
             height: 32px;
             line-height: 32px;
-           
+
             &:hover{
                 color: #087cce;
             }
@@ -120,7 +120,7 @@ a{
 
 .section-category{
     width: 100%;
-   
+
     // border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     &-list{
@@ -134,7 +134,7 @@ a{
         // justify-content:center;
     }
     &-item{
-        padding: 12px 0;
+        padding: 12px 10px;
         margin-right: 15px;
         position: relative;
         & a{
@@ -142,7 +142,7 @@ a{
             font-weight:600;
             white-space: nowrap;
         }
-        
+
         &__desc{
             border-top: 1px solid #9f224e;
             display: none;
@@ -159,9 +159,9 @@ a{
 
             & li{
                  width: 100%;
-                 padding: 5px 15px 10px; 
+                 padding: 5px 15px 10px;
                 & a{
-                   
+
                     font-size:14px;
                     color: #333;
                 }
@@ -169,12 +169,12 @@ a{
             & li:hover{
                 & a{
                     text-decoration: underline;
-                   
+
                 }
             }
         }
         &__home{
-           
+
             background: #e5e5e5;
             color: #757575;
             width: 30px;
@@ -186,24 +186,24 @@ a{
             transition: all 0.5s linear;
 
             & i{
-           
+
                 line-height: 30px;
             }
-            
+
         }
         &__ehome{
-           
-           
-            
+
+
+
             color: #9F224E;
             display:none;
             animation: hideToShow 0.5s linear;
-         
+
         }
         &__home:hover{
             background: #b52759;
             & i{
-           
+
                 color: #fff;
             }
         }
@@ -211,15 +211,15 @@ a{
             .section-category-item__desc{
                 display: block;
                 // opacity: 1;
-               
+
             }
             & a{
                 color:#b52759;
             }
         }
-       
+
     }
-    
+
 }
 .item-first{
     display: none;
@@ -265,7 +265,7 @@ a{
 }
 .header-main.sticky .section-category .section-category-list
 .section-category-item .section-category-item__ehome{
-   
+
     display: block;
 }
 .header-main.sticky .section-category .section-category-list .item-first{
@@ -294,7 +294,7 @@ a{
 @media screen and (max-width: 1279.98px) {
 
     .header-content{
-       
+
     }
     .header{
         padding-left: 20px;

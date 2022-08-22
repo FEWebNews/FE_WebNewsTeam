@@ -1,19 +1,17 @@
 <div class="container">
-  <div class="rss-list" *ngFor="let item of filterCategory | filter:searchKey:'title'| paginate : { itemsPerPage: 5 , currentPage: p }">
+  <div class="rss-list"
+       *ngFor="let item of filterCategory | filter:searchKey:'title'| paginate : { itemsPerPage: 5 , currentPage: p }">
     <div class="rss-item">
       <a [routerLink]="['/content','doisong',item.guid.replace('https://vnexpress.net/','')
-      .replace('/','-')]" 
-      class="rss-title">{{item.title}}</a>
-      <div 
-      [innerHTML]="item.description.replace(item.link,'/content/'+'doisong/'+item.guid.replace('https://vnexpress.net/','')
-  .replace('/','-').replace('/','-').replace('/','-'))"
-      class="rss-desc" >
-
-       
+      .replace('https://video.vnexpress.net/','')
+      .replace('/','-').replace('/','-').replace('/','-')]"
+         class="rss-title">{{item.title}}</a>
+      <div
+        [innerHTML]="item.description.replace(item.link,'/content/'+'doisong/'+item.guid.replace('https://vnexpress.net/','')
+        .replace('https://video.vnexpress.net/','').replace('/','-').replace('/','-').replace('/','-'))"
+        class="rss-desc">
       </div>
-     
     </div>
-
   </div>
   <pagination-controls (pageChange)="p=$event" style="max-width: 100%;
   display: block;
