@@ -6,11 +6,12 @@ import {BehaviorSubject, concat, map, Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class RssService {
-  public url: string = "http://localhost:3000/"
+  // public url: string = "http://localhost:3000/";
+  public url: string = "https://app-data-server.herokuapp.com/";
   public search = new BehaviorSubject<string>("")
   constructor(private http: HttpClient) {
   }
-  
+
   getInfo(data: any, i: number): any {
     return data.rss.channel.item[i];
   }
