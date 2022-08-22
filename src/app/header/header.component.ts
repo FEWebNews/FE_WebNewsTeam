@@ -11,18 +11,18 @@ import { RssService } from '../services/rss.service';
 export class HeaderComponent implements OnInit {
   searchTerm : any
   dataRSS: News [] = [];
-  public user : any
+  public user : any;
   constructor(private rss: RssService , private auth :AuthService) { }
 
   ngOnInit(): void {
 
-    
+
     this.rss.getItem("home").subscribe((res) => {
       this.dataRSS = res;
     })
     this.auth.auth.user.subscribe(user=>{
       this.user = user;})
-  
+
 }
 search(event :any){
   this.searchTerm = event.target.value

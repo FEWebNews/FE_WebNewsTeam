@@ -3,6 +3,7 @@ import axios from 'axios';
 import * as X2JS from "x2js";
 import {RssService} from "../services/rss.service";
 import {newArray} from "@angular/compiler/src/util";
+import {AuthService} from "../services/auth.service";
 
 @Component({
   selector: 'app-admin',
@@ -15,8 +16,9 @@ export class AdminComponent implements OnInit {
   numberNews: number = 50;
   status: string = "";
   done: Array<boolean> = new Array<boolean>();
+  public user: any;
 
-  constructor(private rss: RssService) {
+  constructor(private rss: RssService, private auth: AuthService) {
   }
 
   ngOnInit(): void {
@@ -24,6 +26,9 @@ export class AdminComponent implements OnInit {
       this.done[i] = true;
       this.done[i + 1] = false;
     }
+    this.auth.auth.user.subscribe(user => {
+      this.user = user;
+    })
   }
 
   async createData(url: string, name: string, butCrea: number, butDel: number) {

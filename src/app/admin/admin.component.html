@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="user">
   <div class="note">
     Note*: Cần xóa dữ liệu cữ trước khi tải dữ liệu mới!!!
   </div>
@@ -278,4 +278,7 @@
     </div>
     <hr>
   </div>
+</div>
+<div class="container" *ngIf="!user">
+  <h3 style="text-align: center">Không có quyền truy cập</h3>
 </div>
